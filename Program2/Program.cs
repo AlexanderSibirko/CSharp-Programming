@@ -57,3 +57,36 @@ else //иначе
     max=b; //если условие ложно
 }
 Console.WriteLine(max);
+
+int count = 1;
+while (count <= 10)
+{
+    Console.WriteLine(count);
+    //count = count + 1;
+    //count += 1;
+    count++;
+}
+
+//подсчитайте количество чисел, которые делятся на 3 и на 5
+//из [2,128]
+int number = 21;
+bool flag1 = (number%3) == 0;
+bool flag2 = (number%5) == 0; 
+bool result = flag1 && flag2;
+Console.WriteLine(flag1);
+Console.WriteLine(flag2);
+Console.WriteLine(result);
+
+int start = 2, end = 128;
+int i = start;
+count = 0;
+while (i <= end)
+{
+    if ((i%3==0) && (i%5==0))
+    {
+        count++;
+        Console.Write($"{i}:");
+    }
+    i++;
+}
+Console.WriteLine($"count={count}");
