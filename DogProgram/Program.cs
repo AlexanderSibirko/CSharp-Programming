@@ -30,10 +30,12 @@ while (distance > 10)
     totaltime = totaltime + time;
     totaldistance = totaldistance + (personAspeed+personBspeed) * time;
     count++;
+    //анимация
 }
 
-Console.WriteLine($"Собака перебежала от друга к другу {count} раз");
+
 // Console.WriteLine($"Собака перебегала {totaltime} секунд");
 // Console.WriteLine($"Собака перебежала {totaldistance} метров");
+Console.WriteLine($"Собака перебежала от друга к другу {count} раз");
 Console.WriteLine($"Собака перебегала {Math.Round(totaltime,4)} секунд");
 Console.WriteLine($"Собака перебежала {Math.Round(totaldistance,2)} метров");
